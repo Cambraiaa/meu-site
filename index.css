@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+
+  /* Imagem de fundo */
+  background-image: url("MEU background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #34495e;
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+header nav a:hover,
+header nav a:focus {
+  border-color: #ec4f00;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #a2a8ba;
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.contact-info {
+  color: #44a7b8;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* Estilizando os links dentro de .contact-info */
+.contact-info a {
+  color: #44a7b8; /* Cor principal */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Texto em negrito */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Suavidade nas transições */
+}
+
+.contact-info a:hover {
+  color: #ff6600; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+.contact-info a:active {
+  color: #b33b00; /* Cor ao clicar */
+}
+
+main {
+  color: #9eb6bd;
+}
+
+.contact-info li {
+  margin: 5px 0;
+}
+
+section {
+  color: #9eb6bd;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.experience, .education, .skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}

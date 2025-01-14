@@ -1,0 +1,71 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+
+  /* Imagem de fundo */
+  background-image: url("MEU background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px; /* Aumentar o espaço abaixo do cabeçalho */
+}
+
+/* Ajustes para o nav */
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #34495e;
+  padding: 15px 30px; /* Aumentar o preenchimento do nav */
+  border-radius: 25px;
+  margin-bottom: 30px; /* Aumentar o espaço abaixo do nav */
+}
+
+header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+header nav a:hover,
+header nav a:focus {
+  border-color: #ec4f00;
+}
+
+header nav a.active {
+  border-color: #ec4f00;
+}
+
+h1, h2 {
+  display: inline;
+  margin: 10px 0; /* Adicionar margem vertical */
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+h1 {
+  color: #ec4f00;
+  
+}
+
+h2 {
+  color: #9eb6bd ;
+  padding-left: 150px ;
+}
+
+h3 {
+  color: #9eb6bd;
+  margin: 20px 0; /* Adicionar margem superior e inferior */
+  padding-left: 210px;
+}

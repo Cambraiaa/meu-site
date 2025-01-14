@@ -10,6 +10,10 @@ body {
   background-position: center;
 }
 
+html, body {
+  height: 100%; /* Garante que o body ocupe 100% da altura da janela */
+}
+
 header nav {
   display: flex;
   justify-content: center;
@@ -32,7 +36,12 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus {
-  border-color: #ec4f00;
+  border-color: #ec4f00; /* Cor laranja ao passar o mouse */
+}
+
+/* Adicionando a classe active para o link ativo */
+header nav a.active {
+  border-color: #ec4f00; /* Cor laranja para o link ativo */
 }
 
 header {
@@ -55,7 +64,7 @@ header h1 {
 }
 
 .contact-info {
-  color: #44a7b8;
+  color: #a2a8ba;
   list-style: none;
   padding: 0;
   text-align: center;
@@ -64,7 +73,7 @@ header h1 {
 /* Estilizando os links dentro de .contact-info */
 .contact-info a {
   color: #44a7b8; /* Cor principal */
-  text-decoration: none; /* Remove sublinhado */
+  text-decoration: underline; /* Adiciona sublinhado por padrão */
   font-weight: bold; /* Texto em negrito */
   transition: color 0.3s ease, text-decoration 0.3s ease; /* Suavidade nas transições */
 }

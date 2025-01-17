@@ -7,7 +7,8 @@ body {
   background-image: url("MEU background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
 }
 
 html, body {
@@ -22,7 +23,6 @@ header nav {
   padding: 10px 30px;
   border-radius: 25px;
   margin-bottom: 20px;
-  flex-wrap: wrap; /* Permite que os itens do menu quebrem para uma nova linha em telas pequenas */
 }
 
 header nav a {
@@ -57,8 +57,8 @@ header h1 {
 }
 
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   display: block;
   margin: 0 auto 20px auto;
@@ -71,6 +71,7 @@ header h1 {
   text-align: center;
 }
 
+/* Estilizando os links dentro de .contact-info */
 .contact-info a {
   color: #44a7b8; /* Cor principal */
   text-decoration: underline; /* Adiciona sublinhado por padrão */
@@ -118,60 +119,11 @@ section h2 {
   border-radius: 5px;
 }
 
-/* Media Queries para dispositivos móveis */
+/* Media Query para corrigir o background em dispositivos móveis */
 @media (max-width: 768px) {
-  header nav {
-    gap: 10px;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  .profile-image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .contact-info {
-    font-size: 0.9em;
-  }
-
-  section h2 {
-    font-size: 1.2em;
-  }
-
-  .skills li {
-    padding: 3px 8px;
-    margin: 3px;
+  body {
+    background-size: auto 100%; /* Ajusta o tamanho do fundo para cobrir a altura */
+    background-attachment: scroll; /* Permite que o fundo role com o conteúdo em dispositivos móveis */
   }
 }
-
-@media (max-width: 480px) {
-  header nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  header h1 {
-    font-size: 1.2em;
-  }
-
-  .profile-image {
-    width: 80px;
-    height: 80px;
-  }
-
-  .contact-info {
-    font-size: 0.8em;
-  }
-
-  section h2 {
-    font-size: 1em;
-  }
-
-  .skills li {
-    padding: 2px 5px;
-    margin: 2px;
-  }
-}
+  
